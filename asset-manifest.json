@@ -1,13 +1,15 @@
 {
   "files": {
     "main.css": "/TSC/static/css/main.70f88967.css",
-    "main.js": "/TSC/static/js/main.25c83c98.js",
+    "main.js": "/TSC/static/js/main.a695bd27.js",
+    "static/media/logo.jpeg": "/TSC/static/media/logo.c93d28f93718eb04a1a1.jpeg",
+    "static/media/baner.png": "/TSC/static/media/baner.c4e46e3b15beb3b66f08.png",
     "index.html": "/TSC/index.html",
     "main.70f88967.css.map": "/TSC/static/css/main.70f88967.css.map",
-    "main.25c83c98.js.map": "/TSC/static/js/main.25c83c98.js.map"
+    "main.a695bd27.js.map": "/TSC/static/js/main.a695bd27.js.map"
   },
   "entrypoints": [
     "static/css/main.70f88967.css",
-    "static/js/main.25c83c98.js"
+    "static/js/main.a695bd27.js"
   ]
 }
