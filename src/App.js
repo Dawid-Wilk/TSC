@@ -9,7 +9,7 @@ function App() {
     <>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Startseite />} />
+        <Route path="/TSC" element={<Startseite />} />
         <Route path="/Startseite" element={<Startseite />} />
         <Route path="/ÜberUns" element={<ÜberUns />} />
         <Route path="/Kontakt" element={<Kontakt />} />

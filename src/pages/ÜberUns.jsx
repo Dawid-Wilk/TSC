@@ -1,7 +1,6 @@
 export const ÜberUns = () => {
   return(
     <div className="content">
-
       <div className="banner-container">
         <img 
                 src="./images/banner.svg" 
