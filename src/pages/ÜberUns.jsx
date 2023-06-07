@@ -1,4 +1,4 @@
-import baner from '../images/banner.svg'
+import baner from '../images/baner.png'
 
 export const ÜberUns = () => {
   return(
