@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/TSC/static/css/main.70f88967.css",
+    "main.js": "/TSC/static/js/main.25c83c98.js",
+    "index.html": "/TSC/index.html",
+    "main.70f88967.css.map": "/TSC/static/css/main.70f88967.css.map",
+    "main.25c83c98.js.map": "/TSC/static/js/main.25c83c98.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.70f88967.css",
+    "static/js/main.25c83c98.js"
+  ]
+}
