@@ -9,7 +9,7 @@ export const ÜberUns = () => {
                 alt="baner"
             />
         <div className="text-banner">
-          <h1>Über uns</h1>
+          <h1>Über uns dev</h1>
         </div>
       </div>
     </div>
