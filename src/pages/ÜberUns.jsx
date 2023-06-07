@@ -1,9 +1,11 @@
+import baner from '../images/banner.svg'
+
 export const ÜberUns = () => {
   return(
     <div className="content">
       <div className="banner-container">
         <img 
-                src="./images/banner.svg" 
+                src={baner}
                 alt="baner"
             />
         <div className="text-banner">

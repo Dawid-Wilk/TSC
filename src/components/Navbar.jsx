@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import logo from '../images/logo.jpeg'
 
 export const Navbar = () => {
   return (
@@ -7,7 +8,7 @@ export const Navbar = () => {
           <img 
               width="180"
               height="90" 
-              src="./images/logo.jpeg" 
+              src={logo} 
               alt="logo"
           />
       </Link>
