@@ -23,6 +23,7 @@ export const Startseite = () => {
 
   const sortedData = data.sort((a, b) => a.title.localeCompare(b.title));
 
+
   const goToPage = (pageNumber) => {
     setCurrentPage(pageNumber);
   };
@@ -34,15 +35,6 @@ export const Startseite = () => {
 
   return(
     <div className="content">
-      <div className="banner-container">
-        <img 
-                src="./images/banner.svg" 
-                alt="baner"
-            />
-        <div className="text-banner">
-          <h1>Startseite</h1>
-        </div>
-      </div>
       <div className='data-container'>
         <h1>Zadanie 1</h1>
         <ul>
