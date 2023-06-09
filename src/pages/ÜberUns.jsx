@@ -4,6 +4,7 @@ import arrow from '../images/arrow.png'
 import image1 from '../images/image1.png'
 import image2 from '../images/image2.png'
 import tir from '../images/tir.png'
+import { ImageSlider } from '../components/Slider'
 
 export const ÜberUns = () => {
   return(
@@ -58,7 +59,8 @@ export const ÜberUns = () => {
         <div className="bottom-image">
           <img src={tir} alt="tir" />
         </div>
-    </div>
+      </div>
+      <ImageSlider />
     </div>
   )
 }
