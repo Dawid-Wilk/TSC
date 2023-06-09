@@ -1,15 +1,28 @@
 {
   "files": {
-    "main.css": "/TSC/static/css/main.70f88967.css",
-    "main.js": "/TSC/static/js/main.a695bd27.js",
+    "main.css": "/TSC/static/css/main.e0f8e926.css",
+    "main.js": "/TSC/static/js/main.b7686b08.js",
+    "static/media/mountain.jpg": "/TSC/static/media/mountain.3d98793d2b95b9eb4aa7.jpg",
+    "static/media/fox.jpg": "/TSC/static/media/fox.51d21a8cff8fad2c04da.jpg",
+    "static/media/tir.png": "/TSC/static/media/tir.6ec975a36bc8492ed1e0.png",
+    "static/media/image1.png": "/TSC/static/media/image1.50559e886e2c021ef32f.png",
+    "static/media/image2.png": "/TSC/static/media/image2.9c450c1d25f80a1f5c05.png",
+    "static/media/bird.jpg": "/TSC/static/media/bird.36943807ec67ac167403.jpg",
+    "static/media/tree.jpg": "/TSC/static/media/tree.244ff4be7ad5b3f568ad.jpg",
     "static/media/logo.jpeg": "/TSC/static/media/logo.c93d28f93718eb04a1a1.jpeg",
+    "static/media/dolphin.jpg": "/TSC/static/media/dolphin.68e19e038b95eb3c31dc.jpg",
+    "static/media/sunset.jpg": "/TSC/static/media/sunset.b2218734fb7903f1d9d2.jpg",
     "static/media/baner.png": "/TSC/static/media/baner.c4e46e3b15beb3b66f08.png",
+    "static/media/slick.svg": "/TSC/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/TSC/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/TSC/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/TSC/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/TSC/index.html",
-    "main.70f88967.css.map": "/TSC/static/css/main.70f88967.css.map",
-    "main.a695bd27.js.map": "/TSC/static/js/main.a695bd27.js.map"
+    "main.e0f8e926.css.map": "/TSC/static/css/main.e0f8e926.css.map",
+    "main.b7686b08.js.map": "/TSC/static/js/main.b7686b08.js.map"
   },
   "entrypoints": [
-    "static/css/main.70f88967.css",
-    "static/js/main.a695bd27.js"
+    "static/css/main.e0f8e926.css",
+    "static/js/main.b7686b08.js"
   ]
 }
