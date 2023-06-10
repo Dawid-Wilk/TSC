@@ -5,6 +5,7 @@ import image1 from '../images/image1.png'
 import image2 from '../images/image2.png'
 import tir from '../images/tir.png'
 import { ImageSlider } from '../components/Slider'
+import { Link } from 'react-router-dom'
 
 export const ÜberUns = () => {
   return(
@@ -15,7 +16,9 @@ export const ÜberUns = () => {
                   alt="home"
                   className='home'
               />
-        <p className='home-seite'>Startseite</p>
+        <Link style={{ textDecoration: 'none' }} to="/startseite">
+          <p className="home-seite">Startseite</p>
+        </Link>
         <img 
                   src={arrow}
                   alt="baner"

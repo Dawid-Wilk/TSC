@@ -9,23 +9,27 @@ import fox from '../images/fox.jpg'
 import mountain from '../images/mountain.jpg'
 import leftArrow from '../images/left-arrow-slider.png'
 import rightArrow from '../images/right-arrow-slider.png'
+import { useState, useRef } from 'react';
 
 export const ImageSlider = () => {
-  const CustomPrevArrow = (props) => (
-    <div onClick={props.onClick} className="custom-prev-arrow">
-              <img 
-                  src={leftArrow}
-                  alt="leftArrow"
-              />
+  const [selectedImage, setSelectedImage] = useState('');
+  const popupRef = useRef(null);
+
+  const PrevArrow = (props) => (
+    <div onClick={props.onClick} className="prev-arrow">
+      <img 
+        src={leftArrow}
+        alt="leftArrow"
+      />
     </div>
   );
 
-  const CustomNextArrow = (props) => (
-    <div onClick={props.onClick} className="custom-next-arrow">
-       <img 
-                  src={rightArrow}
-                  alt="rightArrow"
-              />
+  const NextArrow = (props) => (
+    <div onClick={props.onClick} className="next-arrow">
+      <img
+        src={rightArrow}
+        alt="rightArrow"
+      />
     </div>
   );
 
@@ -36,8 +40,18 @@ export const ImageSlider = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
-    prevArrow: <CustomPrevArrow />,
-    nextArrow: <CustomNextArrow />,
+    prevArrow: <PrevArrow />,
+    nextArrow: <NextArrow />,
+  };
+
+  const imageOnClick = (srcImg) => {
+    setSelectedImage(srcImg);
+  };
+
+  const clickOnBackground = (e) => {
+    if (e.target === popupRef.current) {
+      setSelectedImage('')
+    }
   };
 
   return (
@@ -45,41 +59,49 @@ export const ImageSlider = () => {
       <Slider {...settings}>
         <div className="grid-container">
           <div className="grid-row">
-            <img className='small-image' src={fox} alt="Lis" />
-            <img className='large-image' src={dolphin} alt="Delfin" />
-            <img className='small-image' src={bird} alt="Ptak" />
+            <img className='small-image' src={fox} alt="Lis" onClick={() => imageOnClick(fox)} />
+            <img className='large-image' src={dolphin} alt="Delfin" onClick={() => imageOnClick(dolphin)} />
+            <img className='small-image' src={bird} alt="Ptak" onClick={() => imageOnClick(bird)} />
           </div>
           <div className="grid-row">
-            <img className='small-image' src={mountain} alt="Góry" />
-            <img className='small-image' src={sunset} alt="Zachód" />
-            <img className='large-image' src={tree} alt="Drzewo" />
-          </div>
-        </div>
-        <div className="grid-container">
-          <div className="grid-row">
-            <img className='small-image' src={tree} alt="Drzewo" />
-            <img className='large-image' src={mountain} alt="Góry" />
-            <img className='small-image' src={sunset} alt="Zachód" />
-          </div>
-          <div className="grid-row">
-            <img className='small-image' src={dolphin} alt="Delfin" />
-            <img className='small-image' src={fox} alt="Lis" />
-            <img className='large-image' src={bird} alt="Ptak" />
+            <img className='small-image' src={mountain} alt="Góry" onClick={() => imageOnClick(mountain)} />
+            <img className='small-image' src={sunset} alt="Zachód" onClick={() => imageOnClick(sunset)} />
+            <img className='large-image' src={tree} alt="Drzewo" onClick={() => imageOnClick(tree)} />
           </div>
         </div>
         <div className="grid-container">
           <div className="grid-row">
-            <img className='small-image' src={sunset} alt="Zachód" />
-            <img className='large-image' src={bird} alt="Ptak" />
-            <img className='small-image' src={mountain} alt="Góry" />
+            <img className='small-image' src={dolphin} alt="Delfin" onClick={() => imageOnClick(dolphin)} />
+            <img className='large-image' src={bird} alt="Ptak" onClick={() => imageOnClick(bird)} />
+            <img className='small-image' src={fox} alt="Lis" onClick={() => imageOnClick(fox)} />
           </div>
           <div className="grid-row">
-            <img className='small-image' src={fox} alt="Lis" />
-            <img className='small-image' src={dolphin} alt="Delfin" />
-            <img className='large-image' src={tree} alt="Drzewo" />
+            <img className='small-image' src={mountain} alt="Góry" onClick={() => imageOnClick(mountain)} />
+            <img className='small-image' src={fox} alt="Lis" onClick={() => imageOnClick(fox)} />
+            <img className='large-image' src={tree} alt="Drzewo" onClick={() => imageOnClick(tree)}/>
+          </div>
+        </div>
+        <div className="grid-container">
+          <div className="grid-row">
+            <img className='small-image' src={sunset} alt="Zachód" onClick={() => imageOnClick(sunset)} />
+            <img className='large-image' src={bird} alt="Ptak" onClick={() => imageOnClick(bird)} />
+            <img className='small-image' src={mountain} alt="Góry" onClick={() => imageOnClick(mountain)} />
+          </div>
+          <div className="grid-row">
+            <img className='small-image' src={tree} alt="Drzewo" onClick={() => imageOnClick(tree)} />
+            <img className='small-image' src={dolphin} alt="Delfin" onClick={() => imageOnClick(dolphin)} />
+            <img className='large-image' src={tree} alt="Drzewo" onClick={() => imageOnClick(tree)} />
           </div>
         </div>
       </Slider>
+      {selectedImage && (
+        <div className="popup" ref={popupRef} onClick={clickOnBackground}>
+          <img src={selectedImage} alt='popup image' />
+          <button className="close-button" onClick={() => setSelectedImage('')}>
+            <span></span>
+          </button>
+        </div>
+      )}
     </div>
   );
 };
