@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/TSC/static/css/main.e0f8e926.css",
-    "main.js": "/TSC/static/js/main.b7686b08.js",
+    "main.css": "/TSC/static/css/main.e6da5ddb.css",
+    "main.js": "/TSC/static/js/main.5862f37e.js",
     "static/media/mountain.jpg": "/TSC/static/media/mountain.3d98793d2b95b9eb4aa7.jpg",
     "static/media/fox.jpg": "/TSC/static/media/fox.51d21a8cff8fad2c04da.jpg",
     "static/media/tir.png": "/TSC/static/media/tir.6ec975a36bc8492ed1e0.png",
@@ -18,11 +18,11 @@
     "static/media/slick.ttf": "/TSC/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/TSC/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/TSC/index.html",
-    "main.e0f8e926.css.map": "/TSC/static/css/main.e0f8e926.css.map",
-    "main.b7686b08.js.map": "/TSC/static/js/main.b7686b08.js.map"
+    "main.e6da5ddb.css.map": "/TSC/static/css/main.e6da5ddb.css.map",
+    "main.5862f37e.js.map": "/TSC/static/js/main.5862f37e.js.map"
   },
   "entrypoints": [
-    "static/css/main.e0f8e926.css",
-    "static/js/main.b7686b08.js"
+    "static/css/main.e6da5ddb.css",
+    "static/js/main.5862f37e.js"
   ]
 }
