@@ -562,11 +562,11 @@
   }
   
   .mobile-large{
-    width: 97%;
+    width: 90%;
   }
 
   .mobile-small{
-    min-width: 46.9%;
+    width: 44%;
   }
   
   .grid-row {
