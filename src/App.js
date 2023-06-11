@@ -12,7 +12,7 @@ function App() {
         <Route path="/" element={<Startseite />} />
         <Route path="/TSC" element={<Startseite />} />
         <Route path="/Startseite" element={<Startseite />} />
-        <Route path="/ÜberUns" element={<ÜberUns />} />
+        <Route path="/UberUns" element={<ÜberUns />} />
         <Route path="/Kontakt" element={<Kontakt />} />
     </Routes>
     </>

@@ -59,44 +59,44 @@ export const ImageSlider = () => {
       <Slider {...settings}>
         <div className="grid-container">
           <div className="grid-row">
-            <img className='small-image' src={fox} alt="Lis" onClick={() => imageOnClick(fox)} />
-            <img className='large-image' src={dolphin} alt="Delfin" onClick={() => imageOnClick(dolphin)} />
-            <img className='small-image' src={bird} alt="Ptak" onClick={() => imageOnClick(bird)} />
+            <img className='small-image mobile-large' src={fox} alt="Lis" onClick={() => imageOnClick(fox)} />
+            <img className='large-image mobile-small' src={dolphin} alt="Delfin" onClick={() => imageOnClick(dolphin)} />
+            <img className='small-image mobile-small' src={bird} alt="Ptak" onClick={() => imageOnClick(bird)} />
           </div>
           <div className="grid-row">
-            <img className='small-image' src={mountain} alt="Góry" onClick={() => imageOnClick(mountain)} />
-            <img className='small-image' src={sunset} alt="Zachód" onClick={() => imageOnClick(sunset)} />
-            <img className='large-image' src={tree} alt="Drzewo" onClick={() => imageOnClick(tree)} />
-          </div>
-        </div>
-        <div className="grid-container">
-          <div className="grid-row">
-            <img className='small-image' src={dolphin} alt="Delfin" onClick={() => imageOnClick(dolphin)} />
-            <img className='large-image' src={bird} alt="Ptak" onClick={() => imageOnClick(bird)} />
-            <img className='small-image' src={fox} alt="Lis" onClick={() => imageOnClick(fox)} />
-          </div>
-          <div className="grid-row">
-            <img className='small-image' src={mountain} alt="Góry" onClick={() => imageOnClick(mountain)} />
-            <img className='small-image' src={fox} alt="Lis" onClick={() => imageOnClick(fox)} />
-            <img className='large-image' src={tree} alt="Drzewo" onClick={() => imageOnClick(tree)}/>
+            <img className='small-image mobile-large' src={mountain} alt="Góry" onClick={() => imageOnClick(mountain)} />
+            <img className='small-image mobile-small' src={sunset} alt="Zachód" onClick={() => imageOnClick(sunset)} />
+            <img className='large-image mobile-small' src={tree} alt="Drzewo" onClick={() => imageOnClick(tree)} />
           </div>
         </div>
         <div className="grid-container">
           <div className="grid-row">
-            <img className='small-image' src={sunset} alt="Zachód" onClick={() => imageOnClick(sunset)} />
-            <img className='large-image' src={bird} alt="Ptak" onClick={() => imageOnClick(bird)} />
-            <img className='small-image' src={mountain} alt="Góry" onClick={() => imageOnClick(mountain)} />
+            <img className='small-image mobile-large' src={dolphin} alt="Delfin" onClick={() => imageOnClick(dolphin)} />
+            <img className='large-image mobile-small' src={bird} alt="Ptak" onClick={() => imageOnClick(bird)} />
+            <img className='small-image mobile-small' src={fox} alt="Lis" onClick={() => imageOnClick(fox)} />
           </div>
           <div className="grid-row">
-            <img className='small-image' src={tree} alt="Drzewo" onClick={() => imageOnClick(tree)} />
-            <img className='small-image' src={dolphin} alt="Delfin" onClick={() => imageOnClick(dolphin)} />
-            <img className='large-image' src={tree} alt="Drzewo" onClick={() => imageOnClick(tree)} />
+            <img className='small-image mobile-large' src={mountain} alt="Góry" onClick={() => imageOnClick(mountain)} />
+            <img className='small-image mobile-small' src={fox} alt="Lis" onClick={() => imageOnClick(fox)} />
+            <img className='large-image mobile-small' src={tree} alt="Drzewo" onClick={() => imageOnClick(tree)}/>
+          </div>
+        </div>
+        <div className="grid-container">
+          <div className="grid-row">
+            <img className='small-image mobile-large' src={sunset} alt="Zachód" onClick={() => imageOnClick(sunset)} />
+            <img className='large-image mobile-small' src={bird} alt="Ptak" onClick={() => imageOnClick(bird)} />
+            <img className='small-image mobile-small' src={mountain} alt="Góry" onClick={() => imageOnClick(mountain)} />
+          </div>
+          <div className="grid-row">
+            <img className='small-image mobile-large' src={tree} alt="Drzewo" onClick={() => imageOnClick(tree)} />
+            <img className='small-image mobile-small' src={dolphin} alt="Delfin" onClick={() => imageOnClick(dolphin)} />
+            <img className='large-image mobile-small' src={tree} alt="Drzewo" onClick={() => imageOnClick(tree)} />
           </div>
         </div>
       </Slider>
       {selectedImage && (
         <div className="popup" ref={popupRef} onClick={clickOnBackground}>
-          <img src={selectedImage} alt='popup image' />
+          <img src={selectedImage} alt='popup img' />
           <button className="close-button" onClick={() => setSelectedImage('')}>
             <span></span>
           </button>
